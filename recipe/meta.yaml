@@ -1,5 +1,5 @@
 {% set name = "django-handyhelpers" %}
-{% set version = "0.3.17" %}
+{% set version = "0.3.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-handyhelpers-{{ version }}.tar.gz
-  sha256: ce0c3bce73813f386690259f199b85fef5ef808b1c136a5878e840cb747c08c5
+  sha256: 36b495f5885acf0a9d2f8b752cffea18ace3470830930ccc6c48175b078292d8
 
 build:
   noarch: python
