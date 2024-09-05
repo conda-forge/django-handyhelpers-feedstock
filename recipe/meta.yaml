@@ -1,5 +1,5 @@
 {% set name = "django-handyhelpers" %}
-{% set version = "0.3.27" %}
+{% set version = "0.3.28" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 00d585cfe1365e7ba77a97e4507c4ef002a1c2da91d60d632e7757a3fb5292ac
+  sha256: d4d85bc298bcd07db19ef5cd18727e848a7032ceded3400495226bbc008fa235
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - django >=3.2
+    - django
     - djangorestframework
     - djangorestframework-filters ==1.0.0.dev0
     - drf-dynamic-fields
